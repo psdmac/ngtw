@@ -1,1 +1,7 @@
+# Fire.app files
+*.swp
+tmp
+.bundle
 .sass-cache
+fire_app_log.txt
+.DS_Store
