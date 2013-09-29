@@ -1,0 +1,63 @@
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 1px solid $border-color;
+	width: $sidebar-width;
+	background: shade($background, 10%);
+	height: 100%; 
+	.search-wrap {
+		position: relative;
+		border-bottom: 1px solid $border-color;
+		> .icon-search {
+			position: absolute;
+			top: 1em;
+			left: 1em;
+			opacity: 0.8;
+		}
+	}
+	.search {
+		margin: 0.5em;
+		width: 184px;
+		height: 33px;
+		border-radius: 17px;
+		padding-left: 2em;
+		background: tint($background, 30%);
+		color: #333;
+		@include input-placeholder {
+			color: #000;
+			opacity: 0.4;
+		}
+		&:focus {
+			background: tint($background, 60%);
+			color: #666;
+		}
+	}
+	.list {
+		color: #fff;
+		line-height: 49px;
+		padding-left: 0.5em;
+		font-size: 1em;
+		position: relative;
+		background: darken($background, 15%);
+		border-bottom: 1px solid $border-color;
+		opacity: 0.6;
+		@include transition-duration(0.3s);
+		> i {
+			width: 30px;
+			padding-left: 0.5em;
+		}
+		> span {
+			position: absolute;
+			left: 80px;
+		}
+		&:hover {
+			opacity: 0.9;
+		}
+		&.active {
+			opacity: 0.9;
+			background: darken($background, 30%);
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/* line 5, ../sass/style.scss */
+html, body {
+  background: #dad0e8;
+}
+
+/* line 9, ../sass/style.scss */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/style.scss */
+input {
+  border: 0;
+}
+
+/* line 19, ../sass/style.scss */
+#header.bs-custom-nav {
+  background: #563d7c;
+  border-color: #463265;
+  left: 200px;
+}
+/* line 24, ../sass/style.scss */
+#header .navbar-brand {
+  color: #fff;
+  opacity: 0.9;
+}
+/* line 28, ../sass/style.scss */
+#header .github-login {
+  float: right;
+  margin: 0.5em;
+}
+/* line 31, ../sass/style.scss */
+#header .github-login > i {
+  padding-right: 0.5em;
+}

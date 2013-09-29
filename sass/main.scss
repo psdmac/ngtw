@@ -2,5 +2,9 @@
 @include h5bp-normalize;
 @include h5bp-base-styles;
 @include h5bp-chromeframe;
+@import "compass";
 
-
+@import "mixin";
+@import "style";
+@import "sidebar";
+@import "home";
