@@ -15,23 +15,34 @@ input {
   border: 0;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/style.scss */
+#header {
+  z-index: 1;
+}
+/* line 25, ../sass/style.scss */
 #header.bs-custom-nav {
   background: #563d7c;
   border-color: #463265;
-  left: 200px;
+  margin: 0 auto;
 }
-/* line 24, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 #header .navbar-brand {
   color: #fff;
   opacity: 0.9;
+  margin-left: 200px;
 }
-/* line 28, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 #header .github-login {
   float: right;
   margin: 0.5em;
 }
-/* line 31, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 #header .github-login > i {
   padding-right: 0.5em;
 }

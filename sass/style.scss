@@ -15,15 +15,23 @@ input {
 	border: 0;
 }
 
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
 #header {
+	z-index: 1;
 	&.bs-custom-nav {
 		background: $background;
 		border-color: $border-color;
-		left: $sidebar-width;
+		// margin-left: $sidebar-width;
+		margin: 0 auto;
 	}
 	.navbar-brand {
 		color: #fff;
 		opacity: 0.9;
+		margin-left: $sidebar-width;
 	}
 	.github-login {
 		float: right;

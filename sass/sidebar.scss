@@ -2,11 +2,12 @@
 #sidebar {
 	position: fixed;
 	top: 0;
-	left: 0;
+	// left: 0;
 	border-right: 1px solid $border-color;
 	width: $sidebar-width;
 	background: shade($background, 10%);
 	height: 100%; 
+	z-index: 2;
 	.search-wrap {
 		position: relative;
 		border-bottom: 1px solid $border-color;

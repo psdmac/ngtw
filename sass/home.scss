@@ -1,23 +1,30 @@
-#container {
-	position: relative;
-	margin-top: 20px;
-	width: 100%;
-	margin-left: $sidebar-width;
-	overflow: hidden;
+$desktop: 1em 12;
+@include at-breakpoint($desktop) {
+	$gutter-width: 1em;
+	$grid-padding: 0.5em;
+	$container-style: magic;
+	$container-width: 120em;
+	#main {
+		@include container;
+		@include susy-grid-background;
+	}
 }
 
+
+.sub-container {
+	position: relative;
+	height: 100%;
+}
 #main {
-	position: absolute;
-	top: 0;
-	left: 200px;
-	// right: 200px;
-	background: #ccc;
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
 }
 .tag-wrap {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: $sidebar-width;
-	height: 300px;
+	width: 200px;
+	height: 1000px;
 	background: $background;
 }
