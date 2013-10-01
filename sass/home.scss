@@ -1,12 +1,12 @@
 $desktop: 1em 12;
 @include at-breakpoint($desktop) {
 	$gutter-width: 1em;
-	$grid-padding: 0.5em;
+	$grid-padding: 1em;
 	$container-style: magic;
 	$container-width: 120em;
 	#main {
 		@include container;
-		@include susy-grid-background;
+		// @include susy-grid-background;
 	}
 }
 
@@ -16,15 +16,64 @@ $desktop: 1em 12;
 	height: 100%;
 }
 #main {
-	margin-top: 50px;
-	margin-left: 200px;
-	margin-right: 200px;
+	padding-top: 8px;
+	@include at-breakpoint($tablet) {
+		margin-left: 200px;
+	}
+	@include at-breakpoint($md-width) {
+		margin-right: 200px;
+		padding-top: 58px;
+	}
 }
 .tag-wrap {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 200px;
-	height: 1000px;
+	// position: absolute;
+	// top: 50px;
+	width: 100%;
+	// right: 0;
+	// margin-left: 200px;
+	margin-top: 50px; 
+	z-index: 2;
+	height: 100px;
 	background: $background;
+	@include at-breakpoint($tablet) {
+		@include experimental-value(width, calc(100% - 200px));
+		margin-left: 200px;
+		right: 0;
+	}
+	@include at-breakpoint($md-width) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0 !important;
+		width: 200px;
+		height: 1000px;
+		margin-left: 0;
+	}
+}
+.box {
+	margin-bottom: 8px;
+	padding: 8px;
+	border-radius: 16px;
+	background: darken($background, 25%);
+	color: invert($background); 
+	@include span-columns(4);
+	&:nth-child(3n) {
+		@include span-columns(4 omega);
+	}
+	@include at-breakpoint($l-width) {
+		@include span-columns(3);
+		&:nth-child(3n) {
+			@include span-columns(3);
+		}
+		&:nth-child(4n) {
+			@include span-columns(3 omega);
+		}
+	}
+	.tags {
+		> button {
+			margin: 2px;
+			font-size: 14px;
+			line-height: 14px;
+		}
+	}
 }

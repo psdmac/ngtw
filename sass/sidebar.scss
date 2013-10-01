@@ -1,8 +1,11 @@
 
 #sidebar {
-	position: fixed;
-	top: 0;
-	// left: 0;
+		display: none;
+	@include at-breakpoint($tablet) {
+		position: fixed;
+		top: 0;
+		display: block;
+	}
 	border-right: 1px solid $border-color;
 	width: $sidebar-width;
 	background: shade($background, 10%);

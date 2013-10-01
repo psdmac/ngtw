@@ -1,6 +1,11 @@
 $background: #563d7c;
 $border-color: #463265;
 $sidebar-width: 200px;
+$xl-width: 120em 12;
+$l-width: 80em 12;
+$md-width: 60em 12;
+$tablet: 48em 12;
+$phone: 30em 12;
 
 html,body {
 	background: lighten($background, 50%);
@@ -15,8 +20,10 @@ input {
 	border: 0;
 }
 
-.container {
-	max-width: 1170px;
+.wrapper {
+	@include at-breakpoint($xl-width) {
+		max-width: 1920px;
+	}
 	margin: 0 auto;
 }
 
@@ -36,8 +43,12 @@ input {
 	.github-login {
 		float: right;
 		margin: 0.5em;
+		margin-right: 68px;
 		> i {
 			padding-right: 0.5em;
+		}
+		@include at-breakpoint($md-width) {
+			margin-right: 8px;
 		}
 	}
 }

@@ -1,9 +1,16 @@
 <div class="sub-container">
-	<div id="main">
-		<h1>hello</h1>
-	</div>
 	<div class="tag-wrap">
 		<h1>tag</h1>
+	</div>
+	<div id="main">
+		<div class="box" ng-repeat="list in lists">
+			<div class="title">{{list.title}}</div>
+			<a class="url" href="{{list.url}}" target="_blank">launch</a>
+			<div class="tags">
+				<i class="icon-tags"></i>
+				<button ng-repeat="tag in list.tag" class="btn btn-default {{tag}}">{{tag}}</button>
+			</div>
+		</div>
 	</div>
 </div>
 
