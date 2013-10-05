@@ -1,14 +1,23 @@
 /*
 Syntax error: Undefined mixin 'at-breakpoint'.
-        on line 4 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss, in `at-breakpoint'
-        from line 4 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss
-
-1: /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss
+        on line 14 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss, in `at-breakpoint'
+        from line 14 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss
 
 Backtrace:
-/Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss:4:in `at-breakpoint'
-/Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss:4
+/Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss:14:in `at-breakpoint'
+/Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss:14
 /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+org/jruby/RubyKernel.java:2109:in `send'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 org/jruby/RubyKernel.java:2109:in `send'
 /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -80,4 +89,4 @@ org/jruby/RubyProc.java:224:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'at-breakpoint'.\A         on line 4 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss, in `at-breakpoint'\A         from line 4 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss\A \A 1: /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss"; }
+  content: "Syntax error: Undefined mixin 'at-breakpoint'.\A         on line 14 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss, in `at-breakpoint'\A         from line 14 of /Users/ericyang/Dropbox/projects/ngtw/sass/sidebar.scss"; }

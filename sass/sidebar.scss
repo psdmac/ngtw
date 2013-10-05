@@ -1,10 +1,37 @@
 
 #sidebar {
-		display: none;
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 200px;
+		margin: 0.5em;
+		background: transparent;
+		color: #fff;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+		@include at-breakpoint($tablet) {
+			display: none;
+		}
+	}
+	position: fixed;
+	top: 0;
+	display: block;
+	@include translateX(-100%);
+	@include transition-duration(0.3s);
+	&.open {
+		@include translateX(0);
+		.menu {
+			opacity: 1;
+			background: darken($background, 20%);
+		}
+	}
 	@include at-breakpoint($tablet) {
 		position: fixed;
 		top: 0;
 		display: block;
+		@include translate(0, 0);
 	}
 	border-right: 1px solid $border-color;
 	width: $sidebar-width;

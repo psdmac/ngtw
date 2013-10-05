@@ -29,12 +29,18 @@
             <div class="wrapper">
                 <a ng-href="" class="navbar-brand">AngularJS.tw</a>
                 <button type="button" class="btn btn-primary github-login">
-                    <i class="icon-github-alt"></i>使用 Github 登入
+                    <i class="icon-github-alt"></i>
                 </button>
             </div>
         </div>
         <div class="wrapper">
-            <div id="sidebar">
+            <div id="sidebar" ng-controller="SidebarCtrl" ng-class="{open: open}">
+                <button class="menu btn" ng-click="open=true" ng-hide="open">
+                    <i class="icon-reorder"></i>
+                </button>
+                <button class="menu btn" ng-click="open=false" ng-show="open">
+                    <i class="icon-reorder"></i>
+                </button>
                 <ul>
                     <li class="search-wrap">
                         <i class="icon-search"></i>

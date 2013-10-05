@@ -1,7 +1,7 @@
 $background: #563d7c;
 $border-color: #463265;
 $sidebar-width: 200px;
-$xl-width: 120em 12;
+$xl-width: 100em 12;
 $l-width: 80em 12;
 $md-width: 60em 12;
 $tablet: 48em 12;
@@ -38,14 +38,33 @@ input {
 	.navbar-brand {
 		color: #fff;
 		opacity: 0.9;
-		margin-left: $sidebar-width;
+		position: absolute;
+		left: 50%;
+		margin-left: -69px;
+		@include at-breakpoint($tablet) {
+			position: static;
+			margin-left: $sidebar-width;
+		}
 	}
 	.github-login {
 		float: right;
 		margin: 0.5em;
-		margin-right: 68px;
-		> i {
-			padding-right: 0.5em;
+		margin-right: 50px;
+		position: relative;
+		@include at-breakpoint($tablet) {
+			width: 154px;
+			height: 34px;
+			> i {
+				position: absolute;
+				left: 12px;
+				top: 9px;
+			}
+			&:after {
+				content: '使用 Github 登入';
+				position: absolute;
+				top: 6px;
+				right: 9px;
+			}
 		}
 		@include at-breakpoint($md-width) {
 			margin-right: 8px;
